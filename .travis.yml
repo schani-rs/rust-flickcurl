@@ -7,8 +7,11 @@ rust:
 
 addons:
   apt:
+    sources:
+    - llvm-toolchain-trusty-4.0
     packages:
     - libxml2-dev
+    - clang-4.0
 
 branches:
   only:
