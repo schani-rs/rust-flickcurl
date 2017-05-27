@@ -7,7 +7,7 @@ rust:
 addons:
   apt:
     packages:
-    - clang
+    - libxml2-dev
 
 branches:
   only:
@@ -16,7 +16,7 @@ branches:
 cache: cargo
 
 script:
-  clang -v
+  - clang -v
 
   # Build
   - cargo build --verbose
