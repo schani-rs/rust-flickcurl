@@ -4,9 +4,23 @@ rust:
   - beta
   - nightly
 
+addons:
+  apt:
+    packages:
+    - clang
+
 branches:
   only:
   - master
 
 cache: cargo
+
+script:
+  clang -v
+
+  # Build
+  - cargo build --verbose
+
+  # Test
+  - cargo test --verbose
 
