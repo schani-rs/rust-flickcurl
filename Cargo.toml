@@ -1,0 +1,10 @@
+[package]
+name = "flickcurl"
+version = "0.1.0"
+build = "build.rs"
+authors = ["Christoph Wurst <christoph@winzerhof-wurst.at>"]
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.25.2"
