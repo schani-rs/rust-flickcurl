@@ -8,10 +8,10 @@ rust:
 addons:
   apt:
     sources:
-    - llvm-toolchain-trusty-4.0
+    - llvm-toolchain-trusty-3.9
     packages:
     - libxml2-dev
-    - clang-4.0
+    - clang-3.9
 
 branches:
   only:
