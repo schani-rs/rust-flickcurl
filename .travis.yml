@@ -9,6 +9,7 @@ addons:
   apt:
     packages:
     - libxml2-dev
+    - libclang-dev
 
 branches:
   only:
