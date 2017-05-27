@@ -1,3 +1,4 @@
+dist: trusty
 sudo: false
 language: rust
 rust:
@@ -7,9 +8,11 @@ rust:
 
 addons:
   apt:
+   sources:
+    - llvm-toolchain-trusty-4.0
     packages:
     - libxml2-dev
-    - libclang-dev
+    - clang-4.0
 
 branches:
   only:
